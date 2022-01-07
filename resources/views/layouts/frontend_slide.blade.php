@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="cupcake">
+    <style>
+        html{
+            bottom: 0%;
+        }
+    </style>
 <head>
     @include('include.meta')
     <title>@yield('title')</title>

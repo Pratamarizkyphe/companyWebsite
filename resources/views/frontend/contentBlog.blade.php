@@ -69,7 +69,7 @@
         </div>
         <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
       
-      <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+      <span class="inline-block h-1 w-10 rounded bg-gray-500 mt-8 mb-6"></span>
       <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">{{ $blog->author }}</h2>
       <p class="text-gray-500">{{ $blog->created_at }}</p>
     </div>

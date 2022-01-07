@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/tiny-slider.css"/>
     <link rel="stylesheet" href="css/animate.css"/>
     <link rel="stylesheet" href="css/tailwindcss.css"/>
-    
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
      <!--====== Animate CSS ======-->
     

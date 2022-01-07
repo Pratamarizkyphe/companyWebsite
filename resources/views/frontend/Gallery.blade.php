@@ -28,8 +28,7 @@
                     <figure>
                         <img src="{{$gallery->image}}">
                     </figure> 
-                    <div class="card-body text-center">
-                        <h1 class="card-title">{{$gallery->title}}</h1> 
+                    <div class="card-body">
                         <p>{{$gallery->text}}</p>
                     </div>
                 </div>
