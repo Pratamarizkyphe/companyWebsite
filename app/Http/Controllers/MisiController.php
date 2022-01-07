@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\misi;
+use App\Models\footer;
 use App\Http\Requests\StoremisiRequest;
 use App\Http\Requests\UpdatemisiRequest;
 use Illuminate\Support\Facades\DB;
@@ -20,7 +21,11 @@ class MisiController extends Controller
     public function index_fr()
     {
         $misis = DB::table('misis')->get();
-        return view ('frontend.profile',['misis' => $misis]);
+        $footer = Footer::all();
+        return view ('frontend.profile',[
+            'misis' => $misis,
+            'footer' => $footer,
+        ]);
     }
 
     /**

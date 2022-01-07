@@ -1,11 +1,12 @@
-@extends('layouts.frontend_slide')
+@extends('layouts.frontend')
 
-@section('title','Gallery')
+@section('title','Contact')
     @section('content')
       
 <!--====== BRAMD PART START ======-->
 
     <div class="container">
+
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
 
@@ -36,6 +37,7 @@
                 <form>
             </div>
         </div>
+        
     </div>
     
                   

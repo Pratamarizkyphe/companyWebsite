@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\gallery;
 use App\Models\footer;
-use App\Http\Requests\StoregalleryRequest;
-use App\Http\Requests\UpdategalleryRequest;
-use Illuminate\Support\Facades\DB;
-class GalleryController extends Controller
+use App\Http\Requests\StorefooterRequest;
+use App\Http\Requests\UpdatefooterRequest;
+use Illuminate\Request\Facades\DB;
+class FooterController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,21 +15,13 @@ class GalleryController extends Controller
      */
     public function index()
     {
-        
+        $foot = DB::table('footers')->get();
+       
     }
 
-    public function index_fr()
-    {
-        $gallery = DB::table('galleries')->get();
-        $footer = Footer::all();
-        return view('frontend.Gallery',[
-            'gallery'=> $gallery,
-            'footer' => $footer,
-    
-    ]);
-
+    public function data(){
+      
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -44,10 +35,10 @@ class GalleryController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoregalleryRequest  $request
+     * @param  \App\Http\Requests\StorefooterRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoregalleryRequest $request)
+    public function store(StorefooterRequest $request)
     {
         //
     }
@@ -55,10 +46,10 @@ class GalleryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\gallery  $gallery
+     * @param  \App\Models\footer  $footer
      * @return \Illuminate\Http\Response
      */
-    public function show(gallery $gallery)
+    public function show(footer $footer)
     {
         //
     }
@@ -66,10 +57,10 @@ class GalleryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\gallery  $gallery
+     * @param  \App\Models\footer  $footer
      * @return \Illuminate\Http\Response
      */
-    public function edit(gallery $gallery)
+    public function edit(footer $footer)
     {
         //
     }
@@ -77,11 +68,11 @@ class GalleryController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdategalleryRequest  $request
-     * @param  \App\Models\gallery  $gallery
+     * @param  \App\Http\Requests\UpdatefooterRequest  $request
+     * @param  \App\Models\footer  $footer
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdategalleryRequest $request, gallery $gallery)
+    public function update(UpdatefooterRequest $request, footer $footer)
     {
         //
     }
@@ -89,10 +80,10 @@ class GalleryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\gallery  $gallery
+     * @param  \App\Models\footer  $footer
      * @return \Illuminate\Http\Response
      */
-    public function destroy(gallery $gallery)
+    public function destroy(footer $footer)
     {
         //
     }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\portfolio;
+use App\Models\footer;
 use App\Http\Requests\StoreportfolioRequest;
 use App\Http\Requests\UpdateportfolioRequest;
 use Illuminate\Support\Facades\DB;
@@ -20,7 +21,11 @@ class PortfolioController extends Controller
     public function index_fr()
     {
         $portfolio = DB::table('portfolios')->get();
-        return view('frontend.portfolio',['portfolio'=> $portfolio]);
+        $footer = Footer::all();
+        return view('frontend.portfolio',[
+            'portfolio'=> $portfolio,
+            'footer' => $footer,
+        ]);
     }
 
     /**

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\contact;
+use App\Models\footer;
 use App\Http\Requests\StorecontactRequest;
 use App\Http\Requests\UpdatecontactRequest;
 
@@ -19,7 +20,8 @@ class ContactController extends Controller
     }
     public function index_fr()
     {
-        return view('frontend.contact');
+        $footer = Footer::all();
+        return view('mail.form',['footer' => $footer]);
     }
 
     /**

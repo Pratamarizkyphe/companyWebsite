@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\card;
 use App\Models\hero;
 use App\Models\about;
+use App\Models\footer;
 class FrontendController extends Controller
 {
     /**
@@ -18,11 +19,12 @@ class FrontendController extends Controller
         $hero = Hero::all();
         $card = Card::all();
         $about = About::all();
-
+        $foot = Footer::all();
         return view('frontend.home',[
             'hero' => $hero,
             'card' => $card,
             'about' => $about,
+            'foot' => $foot,
         ]);
     }
 

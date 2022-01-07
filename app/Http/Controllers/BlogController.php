@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\blog;
+use App\Models\footer;
 use App\Http\Requests\StoreblogRequest;
 use App\Http\Requests\UpdateblogRequest;
 use Illuminate\Support\Facades\DB;
@@ -20,7 +21,11 @@ class BlogController extends Controller
     public function index_fr()
     {
         $blogs = DB::table('blogs')->get();
-        return view('frontend.Blog',['blogs'=> $blogs]);
+        $footer = Footer::all();
+        return view('frontend.Blog',[
+            'blogs'=> $blogs,
+            'footer' => $footer,
+        ]);
     }
 
 /**
