@@ -42,20 +42,20 @@
                       <a class="" href="/">Home</a>
                     </li>
                      <li class="nav-item ml-5 lg:ml-11">
-                      <a class="" href="/gallery">Gallery</a>
+                      <a  href="/gallery">Gallery</a>
                     </li>
                     <li class="nav-item ml-5 lg:ml-11">
-                      <a class="" href="/blog">Blog</a>
+                      <a  href="/blog">Blog</a>
                     </li>
 
                     <li class="nav-item ml-5 lg:ml-11">
-                      <a class="" href="/portfolio">Portfolio</a>
+                      <a  href="/portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item ml-5 lg:ml-11">
-                      <a class="" href="/mailform">Contact</a>
+                      <a  href="/mailform">Contact</a>
                     </li>
                     <li class="nav-item ml-5 lg:ml-11">
-                      <a class="" href="/profile">Profile</a>
+                      <a  href="/profile">Profile</a>
                     </li>
                   </ul>
                 </div>
