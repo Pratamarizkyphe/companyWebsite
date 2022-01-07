@@ -20,18 +20,11 @@
         </div>
         <section id="blog" class="blog-area pt-120">
         <div class="container">
-            <div class="row">
-            <div class="w-full lg:w-1/2">
-                <div class="pb-8 section-title">
-                <div class="line"></div>
-                <h3 class="title"><span>Our Recent</span> Blog Posts</h3>
-                </div>
-                <!-- section title -->
-            </div>
-            </div>
+         
+            
             <!-- row -->
             <div class="justify-center row">
-            @foreach ($blogs as $blog)
+           
                 
            
           
@@ -60,13 +53,13 @@
                 </div>
                 <!-- single blog -->
             </div> --}}
-
+@foreach ($blogs as $blog)
             <!-- component -->
                 <div>
                     <div class="bg-gray-100 lg:py-12 lg:flex lg:justify-center">
                         <div class="bg-white lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg lg:rounded-lg">
                             <div class="lg:w-1/2">
-                                <div class="h-64 bg-cover lg:rounded-lg lg:h-full" style="background-image:url('{{ $blog->image }}'); height:-100"></div>
+                                <div class="h-64 bg-cover lg:rounded-lg lg:h-full" style="background-image:url('{{ $blog->image }}'); height:-100; background-position:-150 0"></div>
                             </div>
                             <div class="py-12 px-6 max-w-xl lg:max-w-5xl lg:w-1/2">
                                 <h2 class="text-3xl text-gray-800 font-bold">{{$blog->title}}</h2>

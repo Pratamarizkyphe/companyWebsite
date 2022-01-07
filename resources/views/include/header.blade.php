@@ -45,7 +45,7 @@
                       <a class="" href="/gallery">Gallery</a>
                     </li>
                     <li class="nav-item ml-5 lg:ml-11">
-                      <a class="page-scroll" href="#about">Blog</a>
+                      <a class="" href="/blog">Blog</a>
                     </li>
 
                     <li class="nav-item ml-5 lg:ml-11">
