@@ -21,7 +21,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::get('gallery','App\Http\Controllers\GalleryController@index_fr');
 Route::get('portfolio','App\Http\Controllers\PortfolioController@index_fr');
 Route::get('profile','App\Http\Controllers\MisiController@index_fr');
-
+Route::get('vidio','App\Http\Controllers\VidioController@index_fr');
 Route::get('blog','App\Http\Controllers\BlogController@index_fr');
 Route::get('blog/{blog:id}','App\Http\Controllers\BlogController@show');
 

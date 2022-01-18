@@ -39,6 +39,7 @@ class GallerySeeder extends Seeder
                 'text' => 'ini deskripsi dari gambar project yang diatas ini deskripsi dari gambar project yang diatas
                 ',
             ],
+           
             
             
 

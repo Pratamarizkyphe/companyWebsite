@@ -122,20 +122,23 @@
 					
 					<div class="w-full lg:w-1/2">
 						<div class="about-img relative z-10 pt-19 pb-19 mb-18 lg:mb-0">
+							<div data-aos="fade-zoom-in"
+									data-aos-easing="ease-in-back"
+									data-aos-delay="200"
+									data-aos-offset="0"
+									style="z-index: -1"
+									>
+									<img src="img/about/about-left-shape.svg" alt="" class="shape-1">
+									<img src="img/about/left-dots.svg" alt="" class="shape shape-2">
+							</div>
 							<div data-aos="fade-right"
 									data-aos-offset="300"
 									data-aos-delay="400"
 									data-aos-easing="ease-in-sine">
 							
-							<img src="{{$about->image1}}" alt="" class="w-100">
-						</div>
-							<div data-aos="fade-zoom-in"
-									data-aos-easing="ease-in-back"
-									data-aos-delay="50"
-									data-aos-offset="0">
-									<img src="img/about/about-left-shape.svg" alt="" class="shape-1">
-									<img src="img/about/left-dots.svg" alt="" class="shape shape-2">
+								<img src="{{$about->image1}}" alt="" class="w-100">
 							</div>
+							
 						</div>
 					</div>
 					<div class="w-full lg:w-1/2">
@@ -152,7 +155,7 @@
 			</div>
 		</section>
 		<!-- ========================= about-section end ========================= -->
-
+		
 		
 		
     <!-- ========================= footer start ========================= -->
@@ -167,8 +170,7 @@
  @foreach ($foot as $foot)
      
   
- <div data-aos="fade-up"
-	 data-aos-anchor-placement="bottom-bottom">
+ 
 <footer class="footer bg-cover bg-no-repeat bg-right-top pt-120 mt-25 bg-theme-color md:bg-transparent md:pt-260 lg:pt-260" style="background-image: url('img/footer/footer-bg.svg');">
 			<div class="container">
 				<div class="widget-wrapper">
@@ -177,44 +179,51 @@
 							
 							<div class="w-full md:w-6/12 lg:w-4/12">
 								<div class="footer-widget mb-10 mx-3">
-									<div class="logo mb-8">
-										<a href="index.html"> <img src="img/logo/logo.svg" alt=""> </a>
+									<div data-aos="zoom-in-down" 
+											>
+										<div class="logo mb-8">
+											<a href="index.html"> <img src="img/logo/logo.svg" alt=""> </a>
+										</div>
+										<p class="mb-8 text-white sm:pr-13 md:pr-0 2xl:pr-25">{{$foot->text}}.</p>
 									</div>
-									<p class="mb-8 text-white sm:pr-13 md:pr-0 2xl:pr-25">{{$foot->text}}.</p>
-			
 								</div>
 							</div>
 
 							<div class="w-full md:w-6/12 lg:w-2/12">
 								<div class="footer-widget mb-10 mx-3">
-									<h3 class="mb-6 text-white">About Us</h3>
-									<ul class="links">
-										<li> <a href="/">Home</a> </li>
-										<li> <a href="/gallery">Gallery</a> </li>
-										<li> <a href="/blog">Blog</a> </li>
-										<li> <a href="/portfolio">Portfolio</a> </li>
-										<li> <a href="/contact">Contact</a> </li>
-										<li> <a href="/profile">Profile</a> </li>
-									</ul>
+									<div data-aos="zoom-in-up">
+										<h3 class="mb-6 text-white">About Us</h3>
+										<ul class="links">
+											<li> <a href="/">Home</a> </li>
+											<li> <a href="/gallery">Gallery</a> </li>
+											<li> <a href="/blog">Blog</a> </li>
+											<li> <a href="/portfolio">Portfolio</a> </li>
+											<li> <a href="/contact">Contact</a> </li>
+											<li> <a href="/profile">Profile</a> </li>
+										</ul>
+									</div>
 								</div>
 							</div>
 
 							<div class="w-full md:w-6/12 lg:w-3/12">
 								<div class="footer-widget mb-10 mx-3">
-									<h3 class="mb-6 text-white">Contact Us</h3>
-									<ul class="links">
-										<li> <a href="#">+62 8821 4826 417</a> </li>
-										<li> <a href="#">pratamarizky249b@gmail.com</a> </li>
-										<li> <a href="#">Kebakkramat, Karanganyar</a> </li>
-										
-									</ul>
+									<div data-aos="zoom-in-up"
+											>
+										<h3 class="mb-6 text-white">Contact Us</h3>
+										<ul class="links">
+											<li> <a href="#">+62 8821 4826 417</a> </li>
+											<li> <a href="#">pratamarizky249b@gmail.com</a> </li>
+											<li> <a href="#">Kebakkramat, Karanganyar</a> </li>
+											
+										</ul>
+									</div>
 								</div>
 							</div>
 
 							
 
 						</div>
-					</div>
+					
 				</div>
 
 			</div>
