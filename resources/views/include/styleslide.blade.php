@@ -6,5 +6,6 @@
     <link rel="stylesheet" href="css/tailwindcss.css"/>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
-     <!--====== Animate CSS ======-->
+        {{-- js amination by AOS --}}
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
