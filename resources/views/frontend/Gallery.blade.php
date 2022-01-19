@@ -4,6 +4,13 @@
     @section('content')
       
 <!--====== BRAMD PART START ======-->
+<!-- @author: Hackcharms -->
+<style>
+  input:checked ~ .radio {
+color:white;
+background-color: green;
+}
+</style>
 
     <section id="team" class="team-area pt-150">
       <div class="container">
@@ -13,8 +20,18 @@
               <div class="m-auto line"></div>
               <h3 class="title"><span>Gallery</span>Pages</h3>
               <div>
-                <a href="/gallery">Gambar</a> |
-                <a href="/vidio">Vidio</a>
+                <div class="flex justify-center items-center">
+                  <div class="bg-gray-200 rounded-sm">
+                <div class="inline-flex rounded-sm">
+                  <input type="radio" name="room_type" id="roomPrivate" checked hidden/>
+                  <label for="roomPrivate" class="radio text-center self-center py-2 px-4 rounded-lg cursor-pointer hover:opacity-75"><a href="/gallery">Galerry</a></label>
+                </div>
+                <div class="inline-flex rounded-sm">
+                  <input type="radio" name="room_type" id="roomPublic" hidden/>
+                  <label for="roomPublic" class="radio text-center self-center py-2 px-4 rounded-lg cursor-pointer hover:opacity-75"><a href="/vidio">vidio</a></label>
+                </div>
+                </div>
+                </div>
               </div>
             </div>
             <!-- section title -->
