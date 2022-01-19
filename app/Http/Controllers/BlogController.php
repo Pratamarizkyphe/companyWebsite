@@ -71,8 +71,12 @@ class BlogController extends Controller
      */
     public function show(blog $blog)
     {
-       
-        return view('frontend.contentBlog', ['blog' => $blog]);
+        $blogs = DB::table('blogs')->get();
+        return view('frontend.contentBlog', 
+        [
+            'blog' => $blog,
+            'blogs' => $blogs
+     ]);
         
        
     }

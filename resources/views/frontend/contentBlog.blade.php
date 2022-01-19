@@ -75,5 +75,37 @@
     </div>
       </div>
     </section>
-   
+    <section>
+      @foreach ($blogs as $blog)
+            <!-- component -->
+                <div>
+                    <div class="sm:pt-12 ml-4 bg-gray-100 lg:py-4 lg:flex lg:justify-center">
+                        <div class="sm:h-full lg:max-h-full bg-white lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg rounded">
+                            <div class="lg:w-1/2">
+                                <div class=" h-64 bg-cover lg:rounded-lg lg:h-full object-none object-center" style="background-image:url('/{{ $blog->image }}'); "><img src="{{$blog->image}}" alt=""></div>
+                            </div>
+                            <div class="py-4 px-6 max-w-xl lg:max-w-5xl lg:w-1/2">
+                                <h2 class="text-3xl text-gray-800 font-bold">{{$blog->title}}</h2>
+                                <p class="mt-4 text-gray-600">{{Str::limit($blog->content,50)}}</p>
+                                
+                                <div class="mt-8">
+                                <a class="text-theme-color-2" href="/blog/{{ $blog->id }}">
+                                         Baca Selengkapnya
+                                     <i class="ml-2 lni lni-chevron-right"></i>
+                                </a>
+                                <br>
+                                <br>
+                                
+                                    <a style="color:#d1d3ca">{{ date('d-m-Y', strtotime($blog->created_at)); }}</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            
+            @endforeach
+    </section>
     @endsection
+
+    
