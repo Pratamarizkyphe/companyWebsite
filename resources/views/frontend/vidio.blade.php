@@ -26,29 +26,35 @@
            
       
             
-            <div class=" grid lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-2 gap-4 content-center ">
-                @foreach ($vidio as $vidio)
-                    
-                    <div class="w-full sm:w-2/3 lg:w-1/3 ">
-                      
-                             
-                      <div  class="card shadow-2xl">
-                        
-                        <video controls>
-                            <source src="{{ $vidio->vidio }}" type="video/webm">
-                            </video>
-                        <div class="card-body ">
-                          <p class="card-text">
-                            
-                             {{ $vidio->name }}
-                              
-                          </p>
-                        </div>
-                      </div>
-                      <!-- single team -->
-                    </div>
-                    @endforeach  
-             </div>
+           <!-- component -->
+<main class="py-4">
+    <div class="px-4">
+      <div class="block lg:flex justify-between md:-mx-2">
+        @foreach ($vidio as $vidio)
+        <div class="w-full lg:w-1/3 md:mx-2 mb-4 md:mb-0">
+          <div class="bg-white rounded-lg overflow-hidden shadow relative">
+            <video controls>
+                <source src="{{ $vidio->vidio }}" type="video/webm">
+                </video>
+            <div class="p-4 h-auto md:h-40 lg:h-48">
+              <a href="#" class="block text-blue-500 hover:text-blue-600 font-semibold mb-2 text-lg md:text-base lg:text-lg">
+                by {{$vidio->name}}
+              </a>
+              <div class="text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm">
+              last modified {{$vidio->date}}
+              </div>
+              <div class="relative mt-2 lg:absolute bottom-0 mb-4 md:hidden lg:block">
+                <a class="inline bg-gray-300 py-1 px-2 rounded-full text-xs lowercase text-gray-700" href="#">#something</a>
+                <a class="inline bg-gray-300 py-1 px-2 rounded-full text-xs lowercase text-gray-700" href="#">#sky</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      @endforeach
+        
+      </div>
+    </div>
+  </main>
            
         
         </div>

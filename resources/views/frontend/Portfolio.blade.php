@@ -17,34 +17,63 @@
           </div>
         </div>
         <!-- row -->
-        <div class="justify-center row">
+     
         
            
       
             
-        <div class=" grid lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-2 gap-4">
-            @foreach ($portfolio as $portfolio)
-                <div class="card shadow-2xl w-72 card-bordered card-compact lg:card-normal">
-                    <figure>
-                        <img src="{{$portfolio->image}}">
-                    </figure> 
-                    <div class="card-body text-center">
-                        <h1 class="card-title">{{$portfolio->title}}</h1> 
-                        <p class="text-gray-400">{{$portfolio->text}}</p>
-                    </div>
-                </div>
-               
-                @endforeach  
-         </div>
+       <!-- component -->
+<!-- MDI Icons -->
+<link rel="stylesheet" href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css">
+
+<!-- Page Container -->
+<main class="py-4">
+  <div class="px-4">
+    <div class="block lg:flex justify-between md:-mx-2">
+      <div class=" grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-4">
+      @foreach ($portfolio as $item)
+      <div class="flex flex-col">
+        <!-- Avatar -->
+        <a href="#">
+            <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                src="{{$item->image}}">
+        </a>
+
+        <!-- Details -->
+        <div class="text-center mt-6 mb-9">
+            <!-- Name -->
+            <h1 class="text-gray-900 text-xl font-bold mb-1">
+               {{$item->title}}
+            </h1>
+
+            <!-- Social Icons -->
+            <div class=" items-center justify-center opacity-50 hover:opacity-100
+                transition-opacity duration-300">
+                <!-- Linkedin -->
+                <a href="#" class=" hover:bg-indigo-50 h-10 w-10">
+                    <i class="mdi mdi-linkedin text-indigo-500 mx-auto mt-2"></i>
+                    {{$item->text}}
+                </a>
+
+                
+            </div>
+        </div>
+    </div>
+      @endforeach  
+      </div>
+      
+    </div>
+  </div>
+</main>
+
+
+
            
             
                       
             <!-- single team -->
-        </div>
-       {{-- @empty --}}
-           
         
-        </div>
+     
         <!-- row -->
       </div>
       <!-- container -->

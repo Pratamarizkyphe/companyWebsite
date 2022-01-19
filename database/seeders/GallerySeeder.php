@@ -29,13 +29,26 @@ class GallerySeeder extends Seeder
             ],
             [
                 'image' => 'img/gallery/keythree.jpg',
-                'title' => 'ini judul 3',
+                'title' => 'gambar 3',
                 'text' => 'ini deskripsi dari gambar project yang diatas ini deskripsi dari gambar project yang diatas
                 ',
             ],
             [
                 'image' => 'img/gallery/keyfour.jpg',
-                'title' => 'ini judul 3',
+                'title' => 'gambar 5',
+                'text' => 'ini deskripsi dari gambar project yang diatas ini deskripsi dari gambar project yang diatas
+                ',
+            ],
+            [
+                'image' => 'img/gallery/slide 2.png',
+                'title' => 'gambar 4',
+                'text' => 'ini deskripsi dari gambar project yang diatas ini deskripsi dari gambar project yang diatas
+                ',
+            ],
+            
+            [
+                'image' => 'img/gallery/slide 3.png',
+                'title' => 'gambar 6',
                 'text' => 'ini deskripsi dari gambar project yang diatas ini deskripsi dari gambar project yang diatas
                 ',
             ],
