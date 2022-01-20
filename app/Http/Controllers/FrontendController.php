@@ -20,12 +20,14 @@ class FrontendController extends Controller
         $card = Card::all();
         $about = About::all();
         $foot = Footer::all();
-        return view('frontend.home',[
-            'hero' => $hero,
-            'card' => $card,
-            'about' => $about,
-            'foot' => $foot,
-        ]);
+        return view('frontend.home',compact('hero','card','about','foot') 
+        // [
+        //     'hero' => $hero,
+        //     'card' => $card,
+        //     'about' => $about,
+        //     'foot' => $foot,
+        // ]
+    );
     }
 
     /**

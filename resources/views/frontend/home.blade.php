@@ -60,9 +60,11 @@
 
 		<!-- ========================= feature-section start ========================= -->
 		<section id="features" class="feature-section pt-120">
-			<div class="container">
-				<div class="row flex justify-center">
-                     @foreach ($card as $card)
+			<main class="py-4">
+				<div class="px-4">
+				<div class="block lg:flex justify-between md:-mx-2">
+					<div class=" grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-4">
+					@foreach ($card as $card)
 					<div class="w-full md:w-8/12 lg:w-4/12">
 						<div class="text-center px-3 2xl:px-10 py-8">
 							<div data-aos="flip-left">
@@ -76,39 +78,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="w-full md:w-8/12 lg:w-4/12">
-						<div class="text-center px-3 2xl:px-10 py-8">
-							<div data-aos="flip-up">
-								<div class="feature-icon">
-									<i class="lni lni-layout"></i>
-								</div>
-							</div>	
-							<div class="content">
-								<h3 class="mb-5">{{$card->title2}}</h3>
-								<p class="text-lg">{{$card->text}}</p>
-							</div>
-                           
-						</div>
+					@endforeach  
 					</div>
-                    <div class="w-full md:w-8/12 lg:w-4/12">
-						<div class="text-center px-3 2xl:px-10 py-8">
-							<div data-aos="flip-right">	
-								<div class="feature-icon">
-									<i class="lni lni-coffee-cup"></i>
-								</div>
-							</div>		
-							<div class="content">
-								<h3 class="mb-5">{{$card->title3}}</h3>
-								<p class="text-lg">{{$card->text}}</p>
-							</div>
-						</div>
-					</div>
-                            
-                        
-                    
-					 @endforeach
 				</div>
-			</div>
+				</div>
+			</main>
 		</section>
 		<!-- ========================= feature-section end ========================= -->
 

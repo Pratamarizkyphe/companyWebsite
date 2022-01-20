@@ -10,7 +10,7 @@
         <div class="justify-center row">
           <div class="w-full lg:w-2/3">
             <div class="pb-8 text-center section-title">
-              <div class="m-auto line"></div>
+             
               <h3 class="title"><span>Portfolio</span>Pages</h3>
             </div>
             <!-- section title -->

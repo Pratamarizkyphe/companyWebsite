@@ -4,10 +4,32 @@
     <link rel="stylesheet" href="css/tiny-slider.css"/>
     <link rel="stylesheet" href="css/animate.css"/>
     <link rel="stylesheet" href="css/tailwindcss.css"/>
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    
 
         {{-- js amination by AOS --}}
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
             </style>
+
+
+  {{-- for navbar --}}
+     <!--====== Favicon Icon ======-->
+     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+        
+     <!--====== Animate CSS ======-->
+  
+         
+     <!--====== Magnific Popup CSS ======-->
+     <link rel="stylesheet" href="assets/css/magnific-popup.css">
+         
+     <!--====== Slick CSS ======-->
+     <link rel="stylesheet" href="assets/css/slick.css">
+         
+     <!--====== Line Icons CSS ======-->
+     <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+         
+     
+     <!--====== Style CSS ======-->
+     <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+     <link rel="stylesheet" href="assets/css/tailwind.css">
