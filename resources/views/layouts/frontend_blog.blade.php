@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="cupcake">
+    <style>
+        html{
+            bottom: 0%;
+        }
+        #header{
+            font-family: 'Viga', sans-serif;
+        }
+    </style>
 <head>
     @include('include.meta')
     <title>@yield('title')</title>
@@ -7,7 +15,7 @@
     @include('include.styleslide')
     @stack('after-style')
 </head>
-<body style="font-family: 'Poppins', sans-serif;">
+<body>
   
     @yield('content')
   
@@ -18,4 +26,3 @@
     @stack('after-script')
 </body>
 </html>
-

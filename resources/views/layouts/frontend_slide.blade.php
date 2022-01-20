@@ -4,6 +4,9 @@
         html{
             bottom: 0%;
         }
+        #header{
+            font-family: 'Viga', sans-serif;
+        }
     </style>
 <head>
     @include('include.meta')
@@ -12,7 +15,7 @@
     @include('include.styleslide')
     @stack('after-style')
 </head>
-<body style="font-family: 'Poppins', sans-serif;">
+<body>
     @include('include.header')
     @yield('content')
     @include('include.footer')

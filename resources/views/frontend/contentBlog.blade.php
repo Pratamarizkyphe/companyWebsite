@@ -5,7 +5,7 @@
     <!--====== HEADER PART ENDS ======-->
 
     <!--====== Blog start======-->
-   <nav class="flex mb-10 " aria-label="Breadcrumb">
+   <nav class="flex mb-3 py-5 " aria-label="Breadcrumb">
           <ol class="inline-flex items-center space-x-1 md:space-x-3">
             <li class="inline-flex items-center">
               <a href="/" class="inline-flex items-center text-sm text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
@@ -48,8 +48,10 @@
     </section>
 
     <section class="text-gray-600 body-font overflow-hidden">
-      <div class="container px-5 py-24 mx-auto">
+      <h1 class="text-center text-3xl text-gray-800 font-bold ">{{$blog->title}}</h1>
+      <div class="container px-5 py-10 mx-auto">
         <div class="lg:w-4/5 mx-auto flex flex-wrap">
+         
           <img
             alt="ecommerce"
             class="

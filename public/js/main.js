@@ -11,10 +11,10 @@
 
         if (window.pageYOffset > sticky) {
             header_navbar.classList.add("sticky");
-            logo.src = 'assets/img/logo/logo-2.svg';
+            
         } else {
             header_navbar.classList.remove("sticky");
-            logo.src = 'assets/img/logo/logo.svg';
+            
         }
 
         // ========== show or hide the back-top-top button
@@ -83,22 +83,7 @@
     new WOW().init();
 
     //======== tiny slider
-	tns({
-		container: '.testimonial-active',
-        slideBy: 'page',
-        mode: 'gallery',
-		autoplay: false,
-		mouseDrag: true,
-        gutter: 0,
-		nav: false,
-        controls: true,
-        controlsText: [
-            '<i class="lni lni-chevron-left prev"></i>',
-            '<i class="lni lni-chevron-right next"></i>'
-        ],
-        items: 1,
-
-    });
+	
 
     // pricing tab
     const tabs = document.querySelectorAll('[data-tab-target]')

@@ -1,3 +1,4 @@
+<div id="header">
 <div class="hidden preloader">
       <div class="loader">
         <div class="ytp-spinner">
@@ -70,3 +71,4 @@
       </div>
       <!-- navbar area -->
     </header>
+  </div>

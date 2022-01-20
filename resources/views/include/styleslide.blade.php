@@ -8,4 +8,6 @@
 
         {{-- js amination by AOS --}}
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+            </style>

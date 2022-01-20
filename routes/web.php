@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/','App\Http\Controllers\FrontendController@index');
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', 'App\Http\Controllers\user@index')->name('dashboard');
+// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+//     return view('dashboard');
+// })->name('dashboard');
 Route::get('gallery','App\Http\Controllers\GalleryController@index_fr');
 Route::get('portfolio','App\Http\Controllers\PortfolioController@index_fr');
 Route::get('profile','App\Http\Controllers\MisiController@index_fr');
